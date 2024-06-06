@@ -105,7 +105,7 @@ function ProfilePage() {
     }
 
     try {
-      const role = getUserRole();
+      /*const role = getUserRole();*/
 
       // Ajoutez les rôles en fonction du rôle de l'utilisateur
      /* const roles = role === 'mod' ? [{ name: 'ROLE_MODERATOR' }] : [{ name: 'ROLE_USER' }];*/

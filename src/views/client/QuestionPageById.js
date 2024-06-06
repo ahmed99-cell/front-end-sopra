@@ -267,7 +267,8 @@ function QuestionsPageById() {
                           {question.tags.map((tag) => (
                             <div key={tag.id} className="tag-item">
                               {tag.name}
-                              <a className="tagli">link to</a>
+                              <a href="/some-valid-path" className="tagli">link to</a>
+
                             </div>
                           ))}
                         </div>
