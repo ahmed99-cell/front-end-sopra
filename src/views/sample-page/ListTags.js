@@ -10,13 +10,12 @@ import {
   TableCell,
   TableHead,
   TableRow,
-  Chip,
-  IconButton,
+  
 } from '@mui/material';
 
 const ListTags = () => {
   const [tags, setTags] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [ setLoading] = useState(true);
 
   useEffect(() => {
     fetchData();

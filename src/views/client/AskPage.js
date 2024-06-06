@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect, setState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import NewNavbar from './homeComponents/NewNavbar';
 import './askpage.css';
 import axios from 'axios';
@@ -11,17 +11,13 @@ const AskPage = () => {
   const [title, setTitle] = useState('');
   const [content, setContent] = useState('');
   const [file, setFile] = useState(null);
-  const [tagId, setTagId] = useState('');
   const [selectedTags, setSelectedTags] = useState([]);
   const [tags, setTags] = useState([]);
   const editor = useRef(null);
   const votreToken = localStorage.getItem('token');
   const [isAnonymous, setIsAnonymous] = useState(false);
 
-  const config = {
-    // Vos configurations JoditEditor
-  };
-
+ 
   useEffect(() => {
     const fetchTags = async () => {
       try {

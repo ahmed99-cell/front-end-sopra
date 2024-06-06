@@ -20,7 +20,7 @@ const AjouterModerateur = () => {
     const [errors, setErrors] = useState({
 
     });
-    const [loading, setLoading] = useState(false); // Définir l'état loading
+    const [ setLoading] = useState(false); // Définir l'état loading
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormData({ ...formData, [name]: value });

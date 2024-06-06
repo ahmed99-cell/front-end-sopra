@@ -21,7 +21,7 @@ const AuthRegister = ({ title, subtitle, subtext }) => {
     const [errors, setErrors] = useState({
 
     });
-    const [loading, setLoading] = useState(false); // Définir l'état loading
+    const [ setLoading] = useState(false); // Définir l'état loading
 
 
     const handleChange = (event) => {

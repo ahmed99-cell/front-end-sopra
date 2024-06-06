@@ -1,11 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faUser, faCalendar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Markdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
 import axios from 'axios';
 import './QuestionPageById.css';
 import NewNavbar from './homeComponents/NewNavbar';
@@ -75,16 +73,16 @@ const EditDeleteIcons = styled.div`
   margin-top: -20px;
 `;
 
-const Icon = styled.div`
+/*const Icon = styled.div`
   margin-left: 10px;
   cursor: pointer;
-`;
+`;*/
 
 function QuestionsPageById() {
   const [question, setQuestion] = useState(null);
   const [answer, setAnswer] = useState('');
   const { questionId } = useParams();
-  const [currentUser, setCurrentUser] = useState(null);
+  /*const [currentUser, setCurrentUser] = useState(null);*/
 
   library.add(faUser, faCalendar);
 

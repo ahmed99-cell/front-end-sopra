@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Typography } from '@mui/material';
 import PageContainer from 'src/components/container/PageContainer';
 import DashboardCard from '../../components/shared/DashboardCard';
 import 'src/views/sample-page/ModifierProfil.css';
@@ -62,7 +61,7 @@ const userId = userData.id;
 
     try {
       // Send a PUT request to update the profile
-      const response = await axios.put(
+      /*const response = await axios.put(
         `http://localhost:8080/api/user/${userId}`,
         formData,
         {
@@ -70,7 +69,7 @@ const userId = userData.id;
             Authorization: `Bearer ${accessToken}`
           }
         }
-      );
+      );*/
 
       // Handle success response
       setSuccessMessage('Profile updated successfully');

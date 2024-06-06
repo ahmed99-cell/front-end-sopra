@@ -4,7 +4,7 @@ import axios from 'axios';
 import './Header2.css';
 
 function Header2({ onDataUpdate, onAllQuestionsClick }) {
-  const [questions, setQuestions] = useState([]);
+  const [ setQuestions] = useState([]);
   const [activeFilter, setActiveFilter] = useState('');
 
   useEffect(() => {

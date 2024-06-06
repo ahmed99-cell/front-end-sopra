@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
 import './sidebar.css';
-import { BsEscape, BsTagFill,BsStar,BsPerson, BsTag, BsQuestionCircle } from 'react-icons/bs';
-import { BsQuestionCircleFill } from 'react-icons/bs'; // For "tag" and "question" icons
+import { BsStar,BsPerson, BsTag, BsQuestionCircle } from 'react-icons/bs';
 
-const SidebarOption = ({ title, children }) => {
+/*const SidebarOption = ({ title, children }) => {
   return (
     <div className="sidebar-option">
       <p>{title}</p>
@@ -12,7 +10,7 @@ const SidebarOption = ({ title, children }) => {
       </div>
     </div>
   );
-};
+};*/
 
 const Sidebar = () => {
   return (

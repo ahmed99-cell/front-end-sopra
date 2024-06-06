@@ -46,7 +46,6 @@ const Container = styled.div`
 `;
 
 function ProfilePage() {
-  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     prenom: '',
     nom: '',
@@ -113,7 +112,7 @@ function ProfilePage() {
       // Ajoutez les rôles en fonction du rôle de l'utilisateur
       const roles = role === 'mod' ? [{ name: 'ROLE_MODERATOR' }] : [{ name: 'ROLE_USER' }];
 
-      const response = await axios.put(
+    /* const response = await axios.put(
         `http://localhost:8080/api/user/${userId}`,
         {
           ...formData,
@@ -124,7 +123,7 @@ function ProfilePage() {
             Authorization: `Bearer ${accessToken}`,
           },
         },
-      );
+      );*/
 
       setSuccessMessage('Profile updated successfully');
       setErrorMessage('');

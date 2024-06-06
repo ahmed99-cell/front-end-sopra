@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStackOverflow } from '@fortawesome/fontawesome-free-brands';
 import React from "react";
 import { Link } from "react-router-dom";
-import RedButton from "./RedButton";
 import { useState,useEffect } from "react";
-import RedButtonLink from "./RedButtonLink";
 import Profile from "src/layouts/full/header/Profile";
 
 const StyledHeader = styled.header`
@@ -59,7 +57,7 @@ line-height: 50px;
 
 function Navbar (){
 
-    const [username, setUsername] = useState('');
+    const [ setUsername] = useState('');
 
     useEffect(() => {
         // Récupérer le nom d'utilisateur depuis localStorage

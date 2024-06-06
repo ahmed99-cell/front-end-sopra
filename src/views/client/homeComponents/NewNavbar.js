@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import './NewNavbar.css';
 import sopra from "src/assets/images/logos/sopra (2).svg";
 import Profile from "src/layouts/full/header/Profile";

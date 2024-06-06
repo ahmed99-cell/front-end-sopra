@@ -3,7 +3,6 @@ import NewNavbar from './homeComponents/NewNavbar';
 import Sidebar from './homeComponents/sidebar';
 import "../client/Customers.css";
 
-import { NavLink } from 'react-router-dom';
 
 
 const searchSVG = `
@@ -12,7 +11,6 @@ const searchSVG = `
 </svg>
 `;
 
-const searchSVGDataURL = `data:image/svg+xml,${encodeURIComponent(searchSVG)}`;
 
 const Customers = () => {
   return (

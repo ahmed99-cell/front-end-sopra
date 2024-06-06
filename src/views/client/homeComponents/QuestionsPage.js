@@ -72,14 +72,13 @@ const QuestionsPage = () => {
   const [postPerPage] = useState(4);
   const [currentPage, setcurrentPage] = useState(1);
   const [questionDatas, setQuestionData] = useState([]);
-  const [error, setError] = useState(null);
+  const [error] = useState(null);
   const [tags, setTags] = useState([]);
   const [users, setUsers] = useState([]);
   const [searchTitle, setSearchTitle] = useState('');
   const [selectedUser, setSelectedUser] = useState('');
   const [selectedTags, setSelectedTags] = useState([]);
   const [isFavorite, setIsFavorite] = useState(false);
-  const [requestData, setRequestData] = useState({});
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);

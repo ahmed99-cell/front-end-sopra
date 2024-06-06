@@ -13,11 +13,10 @@ import {
 import DashboardCard from '../../../components/shared/DashboardCard';
 import DeleteIcon from '@mui/icons-material/Delete';
 import axios from 'axios';
-import { useNavigate } from 'react-router';
-import { Label } from '@mui/icons-material';
+/*import { useNavigate } from 'react-router';*/
 
 const ListUsers = () => {
-  const navigate = useNavigate(); // Get the navigate function from react-router-dom
+  /*const navigate = useNavigate();*/ // Get the navigate function from react-router-dom
   const [users, setUsers] = useState([]);
 
   useEffect(() => {

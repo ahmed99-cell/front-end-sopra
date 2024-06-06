@@ -1,17 +1,11 @@
 import React from "react"
-import { NavLink } from "react-router-dom";
 import "src/views/client/Acceuil.css";
 import doubt from "src/assets/images/backgrounds/doubt.png";
 import { Link } from "react-router-dom/dist";
 
 
 
-var margin = {
-    marginTop: "80px",
-}
-var color1 = {
-    backgroundColor: 'white',
-    height: '100vh',}
+
 
 function Acceuil() {
     

@@ -1,5 +1,4 @@
 import NewNavbar from './homeComponents/NewNavbar';
-import react from 'react';
 import '../client/UserProfile.css';
 
 function UserProfile() {
