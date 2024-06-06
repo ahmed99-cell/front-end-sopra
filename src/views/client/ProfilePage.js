@@ -2,9 +2,7 @@ import styled from 'styled-components';
 import { createGlobalStyle } from 'styled-components';
 import NewNavbar from './homeComponents/NewNavbar';
 import './UserProfile.css';
-import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router';
 import Swal from 'sweetalert2';
 import { Link } from 'react-router-dom';
 
@@ -110,7 +108,7 @@ function ProfilePage() {
       const role = getUserRole();
 
       // Ajoutez les rôles en fonction du rôle de l'utilisateur
-      const roles = role === 'mod' ? [{ name: 'ROLE_MODERATOR' }] : [{ name: 'ROLE_USER' }];
+     /* const roles = role === 'mod' ? [{ name: 'ROLE_MODERATOR' }] : [{ name: 'ROLE_USER' }];*/
 
     /* const response = await axios.put(
         `http://localhost:8080/api/user/${userId}`,

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import PageContainer from 'src/components/container/PageContainer';
 import DashboardCard from '../../components/shared/DashboardCard';
 import 'src/views/sample-page/ModifierProfil.css';
-import axios from 'axios';
 import { useNavigate } from 'react-router';
 
 const ModifierProfile = () => {

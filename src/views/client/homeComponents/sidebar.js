@@ -50,10 +50,11 @@ const Sidebar = () => {
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link link-dark">
-                <BsStar className="me-2" style={{ fontSize: '1.5rem' }} /> 
-                <span style={{paddingTop:"6px"}}>Favoris</span>
-              </a>
+            <a href="/some-valid-url" className="nav-link link-dark">
+  <BsStar className="me-2" style={{ fontSize: '1.5rem' }} /> 
+  <span style={{ paddingTop: "6px" }}>Favoris</span>
+</a>
+
             </li>
           </ul>
           <hr />

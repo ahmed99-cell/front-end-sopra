@@ -67,11 +67,11 @@ const Separator = styled.hr`
   margin: 30px 0;
 `;
 
-const EditDeleteIcons = styled.div`
+/*const EditDeleteIcons = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: -20px;
-`;
+`;*/
 
 /*const Icon = styled.div`
   margin-left: 10px;
@@ -267,7 +267,7 @@ function QuestionsPageById() {
                           {question.tags.map((tag) => (
                             <div key={tag.id} className="tag-item">
                               {tag.name}
-                              <a className="tagli"></a>
+                              <a className="tagli">link to</a>
                             </div>
                           ))}
                         </div>
