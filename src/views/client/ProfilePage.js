@@ -79,10 +79,10 @@ function ProfilePage() {
     const accessToken = userData?.accessToken;
     const userId = userData?.id;
 
-    function getUserRole() {
+   /* function getUserRole() {
       const user = JSON.parse(localStorage.getItem('user')); // Assurez-vous que l'objet utilisateur est bien stocké en JSON
       return user?.roles?.includes('ROLE_MODERATOR') ? 'moderator' : 'user';
-    }
+    }*/
 
     if (!accessToken) {
       console.error('Access token is missing from localStorage');
